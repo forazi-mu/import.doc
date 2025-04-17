@@ -1,0 +1,90 @@
+/* Global Styles */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Login Page Styles */
+.login-page {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    min-height: 100vh;
+}
+
+.qr-container {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.qr-container img {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.access-info {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+    padding: 20px;
+}
+
+.status-card {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.status-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Status Indicators */
+.status-pending {
+    color: #f39c12;
+}
+
+.status-complete {
+    color: #27ae60;
+}
+
+.status-progress {
+    color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 10px;
+    }
+    
+    .status-card {
+        margin-bottom: 15px;
+    }
+} 
